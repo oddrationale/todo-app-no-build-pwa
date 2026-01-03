@@ -1,0 +1,17 @@
+{
+  "name": "vanilla-js-todo-app-no-build-pwa",
+  "version": "0.0.1",
+  "description": "Simple Todo App in Vanilla JS",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "serve -s .",
+    "typecheck": "tsc --project jsconfig.json --noEmit"
+  },
+  "author": "Dariel Dato-on",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5",
+  "devDependencies": {
+    "serve": "^14.2.5",
+    "typescript": "^5.9.3"
+  }
+}
