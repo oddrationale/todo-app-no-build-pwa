@@ -33,35 +33,6 @@ All implementations use the same styling approach via CDN:
 - Follow `.github/instructions/daisyui.instructions.md` for component patterns
 - Use daisyUI component classes over custom Tailwind utilities
 
-## Project Structure
-
-```
-todo-app-no-build-pwa/
-├── .github/
-│   ├── copilot-instructions.md      # This file - shared patterns
-│   └── instructions/
-│       ├── daisyui.instructions.md  # daisyUI component reference
-│       ├── preact.instructions.md   # Preact-specific patterns
-│       ├── lit.instructions.md      # Lit-specific patterns
-│       └── vanilla-js.instructions.md  # Vanilla JS patterns
-├── preact/                          # Preact + HTM implementation
-├── lit/                             # Lit + LitElement implementation
-└── vanilla-js/                      # Native Web Components implementation
-```
-
-Each framework folder follows a similar structure:
-```
-{framework}/
-├── index.html          # Entry point with import maps
-├── manifest.json       # PWA manifest
-├── sw.js              # Service worker
-├── package.json       # Dev dependencies only
-├── jsconfig.json      # TypeScript config for JS type checking
-├── jsconfig.sw.json   # Separate config for service worker
-├── public/            # Static assets (icons, images)
-└── src/               # Application source code
-```
-
 ## Shared Patterns
 
 ### Import Maps for CDN Dependencies
@@ -108,9 +79,8 @@ Each implementation should provide the same functionality:
 1. **Add todos** - Text input with add button
 2. **Toggle complete** - Click to mark done/undone
 3. **Delete todos** - Remove individual items
-4. **Filter view** - All / Active / Completed
-5. **Persist state** - LocalStorage for offline support
-6. **PWA features** - Installable, works offline
+4. **Persist state** - LocalStorage for offline support
+5. **PWA features** - Installable, works offline
 
 ## Common Gotchas
 
