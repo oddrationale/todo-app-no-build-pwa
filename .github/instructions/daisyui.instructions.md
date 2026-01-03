@@ -1,6 +1,6 @@
 ---
 description: daisyUI 5
-applyTo: "**/*.js, **/*.ts, **/*.jsx, **/*.tsx, **/*.html, **/*.css"
+applyTo: "**/*.{js,ts,jsx,tsx,html,css}"
 ---
 
 # daisyUI 5

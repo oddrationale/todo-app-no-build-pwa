@@ -1,0 +1,19 @@
+{
+  "name": "lit-todo-app-no-build-pwa",
+  "version": "0.0.1",
+  "description": "Simple Todo App in Lit",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "serve -s .",
+    "typecheck": "tsc --project jsconfig.json --noEmit"
+  },
+  "author": "Dariel Dato-on",
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.5",
+  "devDependencies": {
+    "@lit-labs/signals": "^0.2.0",
+    "lit": "^3.3.2",
+    "serve": "^14.2.5",
+    "typescript": "^5.9.3"
+  }
+}

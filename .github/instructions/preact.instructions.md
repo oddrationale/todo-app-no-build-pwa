@@ -1,6 +1,6 @@
 ---
 description: Preact + HTM patterns for no-build applications
-applyTo: "**/*.{js,jsx,html}"
+applyTo: "preact/**"
 ---
 
 # Preact + HTM No-Build Instructions
