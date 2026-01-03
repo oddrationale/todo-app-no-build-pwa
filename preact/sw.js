@@ -4,24 +4,24 @@ const CACHE_NAME = "todo-app-v3";
 
 // Local assets to cache
 const ASSETS_TO_CACHE = [
-  "/",
-  "/index.html",
-  "/manifest.json",
+  "./",
+  "./index.html",
+  "./manifest.json",
   // Source files
-  "/src/main.js",
-  "/src/app.js",
-  "/src/components/Todo.js",
-  "/src/components/TodoComposer.js",
-  "/src/components/TodoList.js",
-  "/src/state/todo.js",
-  "/src/utils/storage.js",
+  "./src/main.js",
+  "./src/app.js",
+  "./src/components/Todo.js",
+  "./src/components/TodoComposer.js",
+  "./src/components/TodoList.js",
+  "./src/state/todo.js",
+  "./src/utils/storage.js",
   // Icons
-  "/public/icons/favicon.ico",
-  "/public/icons/favicon.svg",
-  "/public/icons/favicon-96x96.png",
-  "/public/icons/apple-touch-icon.png",
-  "/public/icons/web-app-manifest-192x192.png",
-  "/public/icons/web-app-manifest-512x512.png",
+  "./public/icons/favicon.ico",
+  "./public/icons/favicon.svg",
+  "./public/icons/favicon-96x96.png",
+  "./public/icons/apple-touch-icon.png",
+  "./public/icons/web-app-manifest-192x192.png",
+  "./public/icons/web-app-manifest-512x512.png",
 ];
 
 // CDN dependencies to cache for offline use
