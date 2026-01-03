@@ -11,6 +11,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.6.5",
   "devDependencies": {
+    "@preact/signals": "^2.5.1",
     "htm": "^3.1.1",
     "preact": "^10.28.1",
     "serve": "^14.2.5",

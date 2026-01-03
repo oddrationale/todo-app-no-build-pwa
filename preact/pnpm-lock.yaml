@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@preact/signals':
+        specifier: ^2.5.1
+        version: 2.5.1(preact@10.28.1)
       htm:
         specifier: ^3.1.1
         version: 3.1.1
@@ -22,6 +25,14 @@ importers:
         version: 5.9.3
 
 packages:
+
+  '@preact/signals-core@1.12.1':
+    resolution: {integrity: sha512-BwbTXpj+9QutoZLQvbttRg5x3l5468qaV2kufh+51yha1c53ep5dY4kTuZR35+3pAZxpfQerGJiQqg34ZNZ6uA==}
+
+  '@preact/signals@2.5.1':
+    resolution: {integrity: sha512-VPjk5YFt7i11Fi4UK0tzaEe5xLwfhUxXL3l89ocxQ5aPz7bRo8M5+N73LjBMPklyXKYKz6YsNo4Smp8n6nplng==}
+    peerDependencies:
+      preact: '>= 10.25.0 || >=11.0.0-0'
 
   '@zeit/schemas@2.36.0':
     resolution: {integrity: sha512-7kjMwcChYEzMKjeex9ZFXkt1AyNov9R5HZtjBKVsmVpw7pa7ZtlCGvCBC2vnnXctaYN+aRI61HjIqeetZW5ROg==}
@@ -358,6 +369,13 @@ packages:
     engines: {node: '>=12'}
 
 snapshots:
+
+  '@preact/signals-core@1.12.1': {}
+
+  '@preact/signals@2.5.1(preact@10.28.1)':
+    dependencies:
+      '@preact/signals-core': 1.12.1
+      preact: 10.28.1
 
   '@zeit/schemas@2.36.0': {}
 
