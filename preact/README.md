@@ -16,12 +16,14 @@ Open http://localhost:3000 in your browser.
 ### No Build Required
 - **HTM** replaces JSX - tagged template literals instead of transpilation
 - **Import maps** load Preact from CDN (esm.sh)
+- **Global types** via `.d.ts` files - no import statements needed
 - **Type checking** via JSDoc + TypeScript in noEmit mode
 - **PWA** with service worker for offline support
 
 ### Tech Stack
 - **[Preact 10](https://preactjs.com)** - Fast 3kb React alternative
 - **[HTM](https://github.com/developit/htm)** - JSX-like syntax without build step
+- **[@preact/signals](https://preactjs.com/guide/v10/signals/)** - Fine-grained reactive state management
 - **[daisyUI 5](https://daisyui.com)** - Tailwind CSS component library
 - **[Tailwind CSS 4](https://tailwindcss.com)** - Utility-first CSS framework
 
@@ -42,25 +44,16 @@ preact/
     ├── main.js        # App initialization, SW registration
     ├── app.js         # Root App component
     ├── components/    # Reusable UI components
-    ├── hooks/         # Custom Preact hooks
-    ├── utils/         # Helper functions (storage, etc.)
-    └── types/         # JSDoc type definitions
+    │   ├── Todo.js
+    │   ├── TodoComposer.js
+    │   └── TodoList.js
+    ├── state/         # Global signals and actions
+    │   └── todo.js    # Todo signals, actions (add, update, delete)
+    ├── utils/         # Helper functions
+    │   └── storage.js # LocalStorage persistence
+    └── types/         # Global type definitions
+        └── todo.d.ts  # Todo, TodoList types (global via declare)
 ```
-
-### Key Syntax Rules
-- Use `html\`` tagged templates, **not** `<JSX />`
-- Event handlers: `onClick=${handler}` (with `${}`)
-- Class attribute: `class="${className}"` (not `className`)
-- Boolean attrs: `checked=${isChecked}`
-
-## 🧪 Development
-
-### Type Checking
-```bash
-pnpm run typecheck
-```
-
-Checks JavaScript files using JSDoc annotations without compilation.
 
 ### PWA Development
 1. Update `ASSETS_TO_CACHE` in `sw.js` when adding new files
@@ -70,11 +63,12 @@ Checks JavaScript files using JSDoc annotations without compilation.
 ## 📋 Todo App Features
 
 - ✅ Add new todos
+- ✅ Edit todo text inline
 - ✅ Toggle complete/incomplete
 - ✅ Delete todos
-- ✅ Filter: All / Active / Completed
 - ✅ LocalStorage persistence
 - ✅ Offline support (PWA)
+- ✅ UUID-based IDs (via `crypto.randomUUID()`)
 
 ## 🔧 Scripts
 
