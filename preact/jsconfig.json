@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "checkJs": true,
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true
+  },
+  "include": ["**/*.js"],
+  "exclude": ["node_modules", "sw.js"]
+}
