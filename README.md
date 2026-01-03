@@ -42,9 +42,8 @@ Each implementation provides:
 1. ➕ Add todos with text input
 2. ✅ Toggle complete/incomplete status
 3. 🗑️ Delete individual todos
-4. 🔍 Filter view (All / Active / Completed)
-5. 💾 Persist state in LocalStorage
-6. 📱 PWA features (installable, works offline)
+4. 💾 Persist state in LocalStorage
+5. 📱 PWA features (installable, works offline)
 
 ## 🚀 Quick Start
 
@@ -72,35 +71,6 @@ pnpm run dev
 ```
 
 Then open http://localhost:3000 in your browser.
-
-## 📁 Project Structure
-
-```
-todo-app-no-build-pwa/
-├── .github/
-│   ├── copilot-instructions.md       # Shared patterns & project goals
-│   └── instructions/
-│       ├── daisyui.instructions.md   # daisyUI component reference
-│       ├── preact.instructions.md    # Preact-specific patterns
-│       ├── lit.instructions.md       # Lit-specific patterns
-│       └── vanilla-js.instructions.md # Vanilla JS patterns
-├── preact/                           # Preact + HTM implementation
-├── lit/                              # Lit + LitElement implementation
-└── vanilla-js/                       # Native Web Components implementation
-```
-
-Each framework folder contains:
-```
-{framework}/
-├── index.html          # Entry point with import maps
-├── manifest.json       # PWA manifest
-├── sw.js              # Service worker for offline support
-├── package.json       # Dev dependencies only (serve, TypeScript)
-├── jsconfig.json      # Type checking config for app code
-├── jsconfig.sw.json   # Type checking config for service worker
-├── public/            # Static assets (icons, images)
-└── src/               # Application source code
-```
 
 ## 🛠️ Development
 
